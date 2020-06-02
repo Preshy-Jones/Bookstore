@@ -1,6 +1,4 @@
-// if (process.env.NODE_ENV !== 'production') {
-//   require('dotenv').load()
-// }
+
 
 const express = require('express')
 const app = express()
@@ -33,11 +31,6 @@ require('./config/passport')(passport)
 
 const port = process.env.PORT || 3000
 
-// const mongoose = require('mongoose')
-// mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
-// const db = mongoose.connection
-// db.on('error', error => console.error(error))
-// db.once('open', () => console.log('Connected to Mongoose'))
 
 // mongoose.connect(db, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }, () => {
 //   console.log('mongoDB connected')
